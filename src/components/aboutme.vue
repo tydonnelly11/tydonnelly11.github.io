@@ -5,13 +5,13 @@
         <h1>Ty Donnelly</h1>
         <p>Computer Science Student at Texas Christian University</p>
         <p>
-            I am a computer science student with a minor in economics currently studying at Texas Christian University, 
-            I have gained valuable knowledge and experience in various programming languages and technologies.
+            I am a senior at TCU with an interest in web development.
+            
         </p>
         <div class="contact-info">
-            <a href="mailto:johndoe@example.com">tydonnelly11@gmail.com</a>
-            <a href="https://www.linkedin.com/in/johndoe" target="_blank">https://www.linkedin.com/in/ty-donnelly-a07488247/</a>
-            <a href="https://github.com/johndoe" target="_blank">https://github.com/tydonnelly11</a>
+            <a href="mailto:tydonnelly11@gmail.com">tydonnelly11@gmail.com</a>
+            <a href="https://www.linkedin.com/in/ty-donnelly-a07488247/" target="_blank">https://www.linkedin.com/in/ty-donnelly-a07488247/</a>
+            <a href="https://github.com/tydonnelly11" target="_blank">https://github.com/tydonnelly11</a>
         </div>
     </div>
     </div>
