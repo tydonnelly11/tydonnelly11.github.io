@@ -4,19 +4,19 @@
         <h2>
             Texas Christian University
         </h2>
-        <h4>Computer Science Major</h4>
-        <h4>Economics Minor</h4>
+        <h4 class="degree-title">Computer Science Major</h4>
+        <h4 class="degree-title">Economics Minor</h4>
         </div>
         <div class="classes-container">
-            <div class="classes">
+            <div>
             <h4 class="h4-course">Currently Taking</h4>
             <ul>
-                <li>Software Engineering</li>
-                <li>OOP and Design Patterns</li>
-                <li>Computer System Fundamentals</li>
+                <li class="taking-elem">Software Engineering</li>
+                <li class="taking-elem">OOP and Design Patterns</li>
+                <li class="taking-elem">Computer System Fundamentals</li>
             </ul>
         </div>
-        <div class="classes">
+        <div class="completed">
             <h4 class="h4-course">Completed</h4>
             <ul class="course-list">
                 
@@ -62,7 +62,12 @@ li{
 
 }
 
-li::before {
+.taking-elem{
+    left: -15px;
+
+}
+
+.course-list > li::before {
   content: ""; 
   position: absolute; 
   top: 5px; 
@@ -87,6 +92,11 @@ li::before {
     columns: 3;
 }
 
+.completed{
+    width :80%;
+
+}
+
 
 .container{
     display: flex;
@@ -109,6 +119,9 @@ h4{
     margin: 0;
     margin-bottom: 1%;
 }
+.degree-title{
+    margin-bottom: 0;
+}
 .h4-course{
     margin-top: 0;
     margin-bottom: 0;
@@ -123,6 +136,7 @@ h4{
     width: 70%;
     margin-bottom: 2.5%;
     align-items: flex-end;
+    border-bottom: 1px solid white;
 }
 
 @media screen and (max-width: 720px){

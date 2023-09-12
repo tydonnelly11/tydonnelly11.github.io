@@ -1,7 +1,9 @@
 <template>
+  <div class="project-container">
     <div class="card" :class="{ flipped: isFlipped }" @click="flipCard">
       <div class="card-inner">
         <div class="card-front" >
+
          
           <img :src="`${image}`">
         </div>
@@ -9,13 +11,24 @@
           <div class="content">
           <ul>
             <li v-for="item in list">{{item}}</li>
-            <a >{{ github }}</a>
+            
           </ul>
 
           </div>
         </div>
       </div>
     </div>
+    <div class="text">
+      <h4 :style="{ zIndex: isFlipped ? '-1000' : '0' }">Click Me</h4>
+      <a :href="github" target="_blank">
+            <button>
+            <i class="fa-brands fa-square-github fa-2xl">
+            </i>
+            </button>
+            
+      </a>
+    </div>
+  </div>
   </template>
   
   <script>
@@ -42,6 +55,10 @@
   </script>
   
   <style scoped>
+  .project-container{
+    display: flex;
+    
+  }
   .content{
     display: flex;
     flex-direction: column;
@@ -53,7 +70,6 @@
     width: 100%;
     height: auto;
     perspective: 1000px;
-    margin-bottom: 7.5%;
 
   }
   ul{
@@ -78,6 +94,19 @@
   
   .flipped .card-inner {
     transform: rotateY(180deg);
+  }
+  button{
+    margin-top: 5%;
+    position: relative;
+    left: 30px;
+  }
+
+  h4{
+    margin: 0;
+    position: relative;
+    left: 38px;
+    color: white;
+    bottom : 25px;
   }
   
 
@@ -106,6 +135,13 @@
     transform: rotateY(-180deg);
     position: absolute;
     top: 0;
+    left: 30px;
+  }
+  .text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
   }
 
   @media screen and (max-width: 720px) {
@@ -114,6 +150,17 @@
       }
       ul{
         line-height: 1rem;
+      }
+      .text{
+        margin-bottom: 2.5%;
+      }
+      button{
+        padding: 0;
+        left: 15px;
+        top: 5px;
+      }
+      .card-back{
+        left : 0px;
       }
     }
     

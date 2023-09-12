@@ -21,13 +21,19 @@
         <experienceCard :title="'Software Developer'" :date="'July-August 2023'" :company="'Forge Tech Custom Steel'" :list=listExperienceOne></experienceCard>
         <experienceCard :title="'Software Engineering Intern'" :date="'June-August 2022'" :company="'Auctane'" :list=listExperienceTwo></experienceCard>
     </div>
+    
 <div class="project-container" ref='projects'>
     <br>
     <h1>Projects</h1>
     <div class="card-container">
         <div class="row" >
-        <projectCard :image="'/superfrogscheduler.jpg'" :list="listProjectOne" :github="'https://github.com/jhmejia/superfrog-scheduler'"/>
-        <projectCard :image="'/bookmanager.jpg'" :list="listProjectTwo"  :github="'https://github.com/tydonnelly11/book-manager'"/>
+        <projectCard :github="'https://github.com/tydonnelly11/superfrog-scheduler'" 
+                     :image="'/superfrog.jpg'" 
+                     :list="listProjectOne" 
+                     />
+        <projectCard :image="'/book.jpg'" 
+                     :list="listProjectTwo"  
+                     :github="'https://github.com/tydonnelly11/book-manager'"/>
     </div>
     <!-- <div class="row" >
         <projectCard :image="'/bookmanager.jpg'"/>
@@ -35,17 +41,18 @@
     </div> -->
     </div>
 </div>
+
+<div class="education-container" ref='education'>
+    <br><br><br>
+    <h1 :style="{margin: '0'}" >Education</h1>
+    <education></education>
+</div>
 <div class="skills-container" ref='skills'>
     <br>
     <h1>Skills</h1>
     <div class="skill-format">
     <skills></skills>
     </div>
-</div>
-<div class="education-container" ref='education'>
-    <br>
-    <h1>Education</h1>
-    <education></education>
 </div>
 </div>
 
@@ -70,7 +77,9 @@ export default {
             ],
             listExperienceTwo :[
                 "Spearheaded the design and implementation of a dynamic warehouse dashboard leveraging React, HTML, and CSS.",
-                "Engineered a user-friendly dashboard layout, integrating flexible graphs and charts that update in real-time with database changes."
+                "Engineered a user-friendly dashboard layout, integrating flexible graphs and charts that update in real-time with database changes.",
+                "Contributed to the design of a MySQL database for fast backend operations",
+                "Implemented communication between the front-end and back-end systems by using express.js to retrieve and transmit data, ensuring seamless data exchange and system functionality."
 
             ],
             listExperienceOne: ['Collaborated with clients, converting their specifications into modern and responsive websites.', 
@@ -132,7 +141,7 @@ export default {
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-bottom: 2%;
 
 }
 .card-container{

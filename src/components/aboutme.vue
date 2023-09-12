@@ -12,17 +12,17 @@
 
             <a href="mailto:tydonnelly11@gmail.com">
                 <button>
-                    <i class="fa-solid fa-square-envelope fa-2xl"></i>
+                    <i :style="'position: relative; left: -1.5px;'" class="fa-solid fa-square-envelope fa-2xl"></i>
                 </button>
             </a>
             <a href="https://www.linkedin.com/in/ty-donnelly-a07488247/" target="_blank">
                 <button>
-                    <i class="fa-brands fa-linkedin fa-2xl" ></i>
+                    <i :style="'position: relative; left: -1.5px;'" class="fa-brands fa-linkedin fa-2xl" ></i>
                 </button>
             </a>
             <a href="https://github.com/tydonnelly11" target="_blank">
             <button>
-            <i class="fa-brands fa-square-github fa-2xl">
+            <i :style="'{position: relative; left: -1.5px;}'" class="fa-brands fa-square-github fa-2xl">
             </i>
             </button>
             
@@ -42,6 +42,10 @@ export default{
 </script>
 
 <style scoped>
+i{
+    position: relative; left: -1.5px;
+
+}
 .icon::before{
     content: "\f0e1"
 }
@@ -50,7 +54,6 @@ export default{
             margin: 0 auto;
             padding: 20px;
             background-color: #1A1A1A;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
             text-align: center;
             color: white;
@@ -68,14 +71,19 @@ export default{
             
         }
         button{
-            border-radius: 8px;
-            border: 1px solid transparent;
-            padding: 0.6em 1.2em;
-            font-size: 1.85em;
+            border-radius: 0;
+            border: 0px solid black;
+            padding: 0;
+            padding-inline: 0;
+            padding-block: 0;
+            font-size: 2.35em;
             font-weight: 500;
             font-family: inherit;
             cursor: pointer;
             transition: border-color 0.25s;
+            width: 95%;
+            position: relative;
+
         }
 
         /* .profile-image {
