@@ -12,17 +12,17 @@
 
             <a href="mailto:tydonnelly11@gmail.com">
                 <button>
-                    <i :style="'position: relative; left: -1.5px;'" class="fa-solid fa-square-envelope fa-2xl"></i>
+                    <i :style="{position: 'relative', left: '-1.5px', color: '#1a1a1a'}" class="fa-solid fa-square-envelope fa-2xl"></i>
                 </button>
             </a>
             <a href="https://www.linkedin.com/in/ty-donnelly-a07488247/" target="_blank">
                 <button>
-                    <i :style="'position: relative; left: -1.5px;'" class="fa-brands fa-linkedin fa-2xl" ></i>
+                    <i :style="{position: 'relative', left: '-1.5px', color: '#1a1a1a'}" class="fa-brands fa-linkedin fa-2xl" ></i>
                 </button>
             </a>
             <a href="https://github.com/tydonnelly11" target="_blank">
             <button>
-            <i :style="'{position: relative; left: -1.5px;}'" class="fa-brands fa-square-github fa-2xl">
+            <i :style="{position: 'relative', left: '-1.5px', color: '#1a1a1a'}" class="fa-brands fa-square-github fa-2xl">
             </i>
             </button>
             
