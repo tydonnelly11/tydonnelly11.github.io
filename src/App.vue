@@ -23,7 +23,7 @@ export default {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: black;
+  background-color: #1A1A1A;
 }
 @font-face {
     font-family: 'Montserrat';

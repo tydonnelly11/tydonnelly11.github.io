@@ -5,13 +5,28 @@
         <h1>Ty Donnelly</h1>
         <p>Computer Science Student at Texas Christian University</p>
         <p>
-            I am a senior at TCU with an interest in web development.
+            Software Engineer seeking fulltime employment after graduation (May 2024)
             
         </p>
         <div class="contact-info">
-            <a href="mailto:tydonnelly11@gmail.com">tydonnelly11@gmail.com</a>
-            <a href="https://www.linkedin.com/in/ty-donnelly-a07488247/" target="_blank">https://www.linkedin.com/in/ty-donnelly-a07488247/</a>
-            <a href="https://github.com/tydonnelly11" target="_blank">https://github.com/tydonnelly11</a>
+
+            <a href="mailto:tydonnelly11@gmail.com">
+                <button>
+                    <i class="fa-solid fa-square-envelope fa-2xl"></i>
+                </button>
+            </a>
+            <a href="https://www.linkedin.com/in/ty-donnelly-a07488247/" target="_blank">
+                <button>
+                    <i class="fa-brands fa-linkedin fa-2xl" ></i>
+                </button>
+            </a>
+            <a href="https://github.com/tydonnelly11" target="_blank">
+            <button>
+            <i class="fa-brands fa-square-github fa-2xl">
+            </i>
+            </button>
+            
+            </a>
         </div>
     </div>
     </div>
@@ -27,11 +42,14 @@ export default{
 </script>
 
 <style scoped>
+.icon::before{
+    content: "\f0e1"
+}
 .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: black;
+            background-color: #1A1A1A;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
             text-align: center;
@@ -49,8 +67,18 @@ export default{
             line-height: 1.6;
             
         }
+        button{
+            border-radius: 8px;
+            border: 1px solid transparent;
+            padding: 0.6em 1.2em;
+            font-size: 1.85em;
+            font-weight: 500;
+            font-family: inherit;
+            cursor: pointer;
+            transition: border-color 0.25s;
+        }
 
-        .profile-image {
+        /* .profile-image {
             width: 150px;
             height: 150px;
             border-radius: 50%;
@@ -58,13 +86,15 @@ export default{
             background: url('placeholder-image.jpg') center/cover;
             border: 4px solid #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
+        } */
 
         .contact-info {
             margin-top: 20px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             line-height: 1.75rem;
+            justify-content: center;
+        
         }
 
         .contact-info a {

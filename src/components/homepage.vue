@@ -6,6 +6,7 @@
         <p @click="scrollToSection('experience')">Experience</p>
         <p @click="scrollToSection('projects')">Projects</p>
         <p @click="scrollToSection('skills')">Skills</p>
+        <p @click="scrollToSection('education')">Education</p>
     </div>
 <div class="top-level-container">
     
@@ -35,12 +36,19 @@
     </div>
 </div>
 <div class="skills-container" ref='skills'>
+    <br>
     <h1>Skills</h1>
     <div class="skill-format">
     <skills></skills>
     </div>
 </div>
+<div class="education-container" ref='education'>
+    <br>
+    <h1>Education</h1>
+    <education></education>
 </div>
+</div>
+
 </template>
 
 <script>
@@ -48,6 +56,7 @@ import aboutme from './aboutme.vue';
 import experienceCard from './experience.vue';
 import projectCard from './projectCard.vue'
 import skills from './skills.vue';
+import education from './education.vue';
 export default {
     name: 'Homepage',
     data(){
@@ -77,7 +86,8 @@ export default {
         projectCard,
         experienceCard,
         aboutme,
-        skills
+        skills,
+        education
     },
     methods: {
     scrollToSection(targetSection) {
@@ -99,8 +109,9 @@ export default {
     display: flex;
     flex-direction: column;
     width: 95%;
-    margin-top: 5%;
-    margin-bottom: 7.5%;
+}
+.education-container{
+    margin-bottom: 2.5%;
 }
 .navbar{
     width: 100%;
@@ -109,7 +120,7 @@ export default {
     position: sticky;
     top: 0;
     justify-content: space-evenly;
-    background-color: black;
+    background-color: #1A1A1A;
     z-index: 9999;
 
 }
@@ -138,6 +149,7 @@ export default {
     flex-direction: column;
     justify-content: space-around;
     width: 90%;
+    margin-bottom: 5%;
 }
 h1{
     color: white;

@@ -88,7 +88,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #1A1A1A;
     object-fit: cover;
     background-repeat: no-repeat;
     transform: rotateY(0deg); 
