@@ -44,7 +44,7 @@
 
 <div class="education-container" ref='education'>
     <br><br><br>
-    <h1 :style="{margin: '0'}" >Education</h1>
+    <h1 :style="{margin: '0', position: 'relative', left: '-4px'}" >Education</h1>
     <education></education>
 </div>
 <div class="skills-container" ref='skills'>
