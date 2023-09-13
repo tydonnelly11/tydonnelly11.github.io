@@ -35,8 +35,7 @@
   export default {
     name: "projectCard",
     props: {
-      title: String,
-      description: String,
+      
       image: String,
       list: Array,
       github: String

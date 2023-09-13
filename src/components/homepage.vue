@@ -5,8 +5,9 @@
         <p @click="scrollToSection('aboutme')">About Me</p>
         <p @click="scrollToSection('experience')">Experience</p>
         <p @click="scrollToSection('projects')">Projects</p>
-        <p @click="scrollToSection('skills')">Skills</p>
         <p @click="scrollToSection('education')">Education</p>
+
+        <p @click="scrollToSection('skills')">Skills</p>
     </div>
 <div class="top-level-container">
     
