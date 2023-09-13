@@ -21,7 +21,7 @@
     <div class="text">
       <h4 :style="{ zIndex: isFlipped ? '-1000' : '0' }">Click Me</h4>
       <a :href="github" target="_blank">
-            <button>
+            <button class="button-project">
             <i class="fa-brands fa-square-github fa-2xl">
             </i>
             </button>
@@ -55,6 +55,11 @@
   </script>
   
   <style scoped>
+ .button-project > i{
+  font-size: 2.5rem;
+  position: relative;
+  left: -2px;
+ }
   .project-container{
     display: flex;
     
@@ -95,10 +100,14 @@
   .flipped .card-inner {
     transform: rotateY(180deg);
   }
-  button{
+  .button-project{
     margin-top: 5%;
     position: relative;
     left: 30px;
+    padding: 0;
+    top: 7.5px;
+    width: 90%;
+    height: 115%;
   }
 
   h4{
