@@ -105,7 +105,10 @@ i{
         
         }
 
-       
+        .contact-info a {
+           
+            margin: 0 10px;
+        }
 
         .contact-info a:hover {
             text-decoration: underline;

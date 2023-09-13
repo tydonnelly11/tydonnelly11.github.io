@@ -170,6 +170,9 @@
       .card-back{
         left : 0px;
       }
+      .content{
+        color: black;
+      }
     }
     
   </style>
