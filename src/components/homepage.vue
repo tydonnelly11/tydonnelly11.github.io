@@ -35,7 +35,15 @@
         <projectCard :image="'/book.jpg'" 
                      :list="listProjectTwo"  
                      :github="'https://github.com/tydonnelly11/book-manager'"/>
+        
     </div>
+    <div class="row">
+    <projectCard
+    :image="'/forgetechsite.jpg'"
+    :list="listExperienceOne"
+    :github="'https://forgetechsteel.com/'"
+    ></projectCard>
+</div>
     <!-- <div class="row" >
         <projectCard :image="'/bookmanager.jpg'"/>
         <projectCard :image="'/superfrogscheduler.jpg'"/>
@@ -147,7 +155,7 @@ export default {
 }
 .card-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     gap: 20%;
