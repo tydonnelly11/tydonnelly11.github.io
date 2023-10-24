@@ -38,11 +38,19 @@
         
     </div>
     <div class="row">
-    <projectCard
-    :image="'/forgetechsite.jpg'"
-    :list="listExperienceOne"
-    :github="'https://forgetechsteel.com/'"
+    <projectCard 
+                :image="'/forge.jpg'"
+                :list="listExperienceOne"
+                :github="'https://forgetechsteel.com/'"
     ></projectCard>
+
+    <projectCard
+    
+                :image="'/loading.jpg'"
+                :list="listProjectThree"
+                :github="'https://github.com/tydonnelly11/pet-frontend'"
+    ></projectCard>
+    
 </div>
     <!-- <div class="row" >
         <projectCard :image="'/bookmanager.jpg'"/>
@@ -97,7 +105,11 @@ export default {
             listProjectTwo: ['A locally hosted book database using MySQL and Python', 
             'Implemented the ability to search by book title, author, ISBN, Publisher, year of publication and price', 
             'Allows for the creation of new books, deletion of existing books, and updating of existing books.',
-            ]
+            ],
+            listProjectThree: ['A web application that allows streamlines the process for TCU senior design students to submit class specific forms',
+            'Implemented a Vue.js frontend with a Java SpringBoot backend that saves and retrieves data from a MySQL database',
+            'This is currently a work in progress, we expect to have the MVP done before new years with the final product to be released in Q2 2024']
+
         }
     },
     components: {
