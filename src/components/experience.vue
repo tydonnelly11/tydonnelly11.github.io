@@ -13,7 +13,7 @@
 
 <script>
 export default{
-    name: 'experienceCard',
+    name: 'experience',
     props: {
         title: String,
         company: String,

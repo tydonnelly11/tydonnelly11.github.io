@@ -19,8 +19,8 @@
     <div class="experience-container" ref="experience">
         <br>
         <h1>Experience</h1>
-        <experienceCard :title="'Software Developer'" :date="'July-August 2023'" :company="'Forge Tech Custom Steel'" :list=listExperienceOne></experienceCard>
-        <experienceCard :title="'Software Engineering Intern'" :date="'June-August 2022'" :company="'Auctane'" :list=listExperienceTwo></experienceCard>
+        <experience :title="'Software Developer Intern'" :date="'July-August 2023'" :company="'Forge Tech Custom Steel'" :list=listExperienceOne></experience>
+        <experience :title="'Software Engineering Intern'" :date="'June-August 2022'" :company="'Auctane'" :list=listExperienceTwo></experience>
     </div>
     
 <div class="project-container" ref='projects'>
@@ -77,7 +77,7 @@
 
 <script>
 import aboutme from './aboutme.vue';
-import experienceCard from './experience.vue';
+import experience from './experience.vue';
 import projectCard from './projectCard.vue'
 import skills from './skills.vue';
 import education from './education.vue';
@@ -114,7 +114,7 @@ export default {
     },
     components: {
         projectCard,
-        experienceCard,
+        experience,
         aboutme,
         skills,
         education
