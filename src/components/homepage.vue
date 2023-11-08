@@ -20,7 +20,7 @@
         <br>
         <h1>Experience</h1>
         <experience :title="'Software Developer Intern'" :date="'July-August 2023'" :company="'Forge Tech Custom Steel'" :list=listExperienceOne></experience>
-        <experience :title="'Software Engineering Intern'" :date="'June-August 2022'" :company="'Auctane'" :list=listExperienceTwo></experience>
+        <experience :title="'Software Engineering Intern'" :date="'June-August 2022'" :company="'ShipStation'" :list=listExperienceTwo></experience>
     </div>
     
 <div class="project-container" ref='projects'>
