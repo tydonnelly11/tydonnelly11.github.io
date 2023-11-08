@@ -32,30 +32,14 @@
                      :image="'/superfrog.jpg'" 
                      :list="listProjectOne" 
                      />
-        <projectCard :image="'/book.jpg'" 
-                     :list="listProjectTwo"  
-                     :github="'https://github.com/tydonnelly11/book-manager'"/>
+        <projectCard
+                    :image="'/loading.jpg'"
+                    :list="listProjectThree"
+                    :github="'https://github.com/tydonnelly11/pet-frontend'"
+        ></projectCard>
         
     </div>
-    <div class="row">
-    <projectCard 
-                :image="'/forge.jpg'"
-                :list="listExperienceOne"
-                :github="'https://forgetechsteel.com/'"
-    ></projectCard>
-
-    <projectCard
     
-                :image="'/loading.jpg'"
-                :list="listProjectThree"
-                :github="'https://github.com/tydonnelly11/pet-frontend'"
-    ></projectCard>
-    
-</div>
-    <!-- <div class="row" >
-        <projectCard :image="'/bookmanager.jpg'"/>
-        <projectCard :image="'/superfrogscheduler.jpg'"/>
-    </div> -->
     </div>
 </div>
 

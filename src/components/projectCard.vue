@@ -80,7 +80,7 @@
     line-height: 2rem;
   }
   ul li{
-    font-size: .8rem;
+    font-size: .8em;
   }
   img{
     height: 100%;
