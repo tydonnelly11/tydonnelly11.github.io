@@ -19,7 +19,7 @@
     <div class="experience-container" ref="experience">
         <br>
         <h1>Experience</h1>
-        <experienceCard :title="'Software Developer'" :date="'July-August 2023'" :company="'Forge Tech Custom Steel'" :list=listExperienceOne></experienceCard>
+        <experienceCard :title="'Software Developer Intern'" :date="'July-August 2023'" :company="'Forge Tech Custom Steel'" :list=listExperienceOne></experienceCard>
         <experienceCard :title="'Software Engineering Intern'" :date="'June-August 2022'" :company="'Auctane'" :list=listExperienceTwo></experienceCard>
     </div>
     
@@ -32,18 +32,18 @@
                      :image="'/superfrog.jpg'" 
                      :list="listProjectOne" 
                      />
-        <projectCard :image="'/book.jpg'" 
+        <!-- <projectCard :image="'/book.jpg'" 
                      :list="listProjectTwo"  
-                     :github="'https://github.com/tydonnelly11/book-manager'"/>
+                     :github="'https://github.com/tydonnelly11/book-manager'"/> -->
         
     </div>
-    <div class="row">
+    <!-- <div class="row">
     <projectCard
     :image="'/forgetechsite.jpg'"
     :list="listExperienceOne"
     :github="'https://forgetechsteel.com/'"
     ></projectCard>
-</div>
+</div> -->
     <!-- <div class="row" >
         <projectCard :image="'/bookmanager.jpg'"/>
         <projectCard :image="'/superfrogscheduler.jpg'"/>
@@ -85,15 +85,15 @@ export default {
 
             ],
             listExperienceTwo :[
-                "Spearheaded the design and implementation of a dynamic warehouse dashboard leveraging React, HTML, and CSS.",
-                "Engineered a user-friendly dashboard layout, integrating flexible graphs and charts that update in real-time with database changes.",
-                "Contributed to the design of a MySQL database for fast backend operations",
-                "Implemented communication between the front-end and back-end systems by using express.js to retrieve and transmit data, ensuring seamless data exchange and system functionality."
+                "Spearheaded the design and implementation of a dynamic dashboard for warehouses utilizing React, HTML, and CSS for frontend and Express.js for the backend framework.",
+"Contributed to the design of a SQL database for fast and seamless CRUD operations.",
+"Engineered a user-friendly dashboard layout following the scrum methodology, integrating flexible graphs and charts that update in real-time with shipping data entered by warehouse workers."
+
 
             ],
-            listExperienceOne: ['Collaborated with clients, converting their specifications into modern and responsive websites.', 
-            'Employed a tech stack including HTML, CSS, Vue.js, and several AWS services for site development.', 
-            'Deployed at https://forgetechsteel.com/'],
+            listExperienceOne: ['Worked with the company, converting their specifications into a modern and responsive Single Page Application, which increased user engagement and led to a 50% rise in user contacts compared to the old website.',
+'Employed a tech stack including HTML, CSS, Vue.js, for the frontend and several AWS Cloud services including Route 53, Lambda, Amazon SES, API Gateway for deployment and backend operations.',
+'Implemented and managed CI/CD pipelines using GitHub Actions, ensuring seamless code integration, automated testing, and deployment to the production environment.'],
             listProjectTwo: ['A locally hosted book database using MySQL and Python', 
             'Implemented the ability to search by book title, author, ISBN, Publisher, year of publication and price', 
             'Allows for the creation of new books, deletion of existing books, and updating of existing books.',
