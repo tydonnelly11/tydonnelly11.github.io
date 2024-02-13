@@ -80,7 +80,7 @@
     line-height: 2rem;
   }
   ul li{
-    font-size: 1rem;
+    font-size: .8em;
   }
   img{
     height: 100%;
@@ -133,7 +133,7 @@
   }
   
   .card-back {
-    width: 100%;
+    width: 90%;
     height: 100%;
     backface-visibility: hidden;
     display: flex;
@@ -143,7 +143,7 @@
     transform: rotateY(-180deg);
     position: absolute;
     top: 0;
-    left: 30px;
+    left: 24px;
   }
   .text{
     display: flex;

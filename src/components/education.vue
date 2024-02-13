@@ -8,7 +8,7 @@
         <h4 class="degree-title">Economics Minor</h4>
         </div>
         <div class="classes-container">
-            <div>
+            <div :style="{'margin-right': '10px'}">
             <h4 class="h4-course">Currently Taking</h4>
             <ul>
                 <li class="taking-elem">Software Engineering</li>
