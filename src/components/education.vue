@@ -11,15 +11,16 @@
             <div :style="{'margin-right': '10px'}">
             <h4 class="h4-course">Currently Taking</h4>
             <ul>
-                <li class="taking-elem">Software Engineering</li>
-                <li class="taking-elem">OOP and Design Patterns</li>
-                <li class="taking-elem">Computer System Fundamentals</li>
+                <li class="taking-elem">Senior Design</li>
+                <li class="taking-elem">Operating Systems</li>
             </ul>
         </div>
         <div class="completed">
             <h4 class="h4-course">Completed</h4>
             <ul class="course-list">
-                
+                <li>Software Engineering</li>
+                <li>OOP and Design Patterns</li>
+                <li>Computer System Fundamentals</li>
 
                 <li>Computer and Network Security</li>
                 <li>Data Mining and Visualization</li>

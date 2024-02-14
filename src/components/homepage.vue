@@ -61,7 +61,7 @@
 
 <script>
 import aboutme from './aboutme.vue';
-import experience from './experience.vue';
+import experienceCard from './experience.vue';
 import projectCard from './projectCard.vue'
 import skills from './skills.vue';
 import education from './education.vue';
@@ -78,14 +78,14 @@ export default {
             ],
             listExperienceTwo :[
                 "Spearheaded the design and implementation of a dynamic dashboard for warehouses utilizing React, HTML, and CSS for frontend and Express.js for the backend framework.",
-"Contributed to the design of a SQL database for fast and seamless CRUD operations.",
-"Engineered a user-friendly dashboard layout following the scrum methodology, integrating flexible graphs and charts that update in real-time with shipping data entered by warehouse workers."
+                "Contributed to the design of a SQL database for fast and seamless CRUD operations.",
+                "Engineered a user-friendly dashboard layout following the scrum methodology, integrating flexible graphs and charts that update in real-time with shipping data entered by warehouse workers."
 
 
             ],
             listExperienceOne: ['Worked with the company, converting their specifications into a modern and responsive Single Page Application, which increased user engagement and led to a 50% rise in user contacts compared to the old website.',
-'Employed a tech stack including HTML, CSS, Vue.js, for the frontend and several AWS Cloud services including Route 53, Lambda, Amazon SES, API Gateway for deployment and backend operations.',
-'Implemented and managed CI/CD pipelines using GitHub Actions, ensuring seamless code integration, automated testing, and deployment to the production environment.'],
+            'Employed a tech stack including HTML, CSS, Vue.js, for the frontend and several AWS Cloud services including Route 53, Lambda, Amazon SES, API Gateway for deployment and backend operations.',
+            'Implemented and managed CI/CD pipelines using GitHub Actions, ensuring seamless code integration, automated testing, and deployment to the production environment.'],
             listProjectTwo: ['A locally hosted book database using MySQL and Python', 
             'Implemented the ability to search by book title, author, ISBN, Publisher, year of publication and price', 
             'Allows for the creation of new books, deletion of existing books, and updating of existing books.',
@@ -98,7 +98,7 @@ export default {
     },
     components: {
         projectCard,
-        experience,
+        experienceCard,
         aboutme,
         skills,
         education
