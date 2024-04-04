@@ -37,11 +37,25 @@
                     :list="listProjectThree"
                     :github="'https://github.com/tydonnelly11/pet-frontend'"
         ></projectCard>
-        
+        </div>
+        <div class="row" :style='"width: 100%"'>
+            
+            <projectCard
+                :image="'/oldF1Logo.webp'"
+                :list="listProjectTwo"
+                :github="'https://github.com/tydonnelly11/f1-news-aggregation-app'"
+                :style="'width : 50%;'"
+                />
+                <projectCard v-if="false"
+                :image="'/background-img.jpg'"
+                :list="listProjectTwo"
+                :github="'https://github.com/tydonnelly11/f1-news-aggregation-app'"
+                :style="'display: none'"></projectCard>
+
+        </div>
     </div>
     
     </div>
-</div>
 
 <div class="education-container" ref='education'>
     <br><br><br>
@@ -86,9 +100,8 @@ export default {
             listExperienceOne: ['Worked with the company, converting their specifications into a modern and responsive Single Page Application, which increased user engagement and led to a 50% rise in user contacts compared to the old website.',
             'Employed a tech stack including HTML, CSS, Vue.js, for the frontend and several AWS Cloud services including Route 53, Lambda, Amazon SES, API Gateway for deployment and backend operations.',
             'Implemented and managed CI/CD pipelines using GitHub Actions, ensuring seamless code integration, automated testing, and deployment to the production environment.'],
-            listProjectTwo: ['A locally hosted book database using MySQL and Python', 
-            'Implemented the ability to search by book title, author, ISBN, Publisher, year of publication and price', 
-            'Allows for the creation of new books, deletion of existing books, and updating of existing books.',
+            listProjectTwo: ["Developed a dynamic Single Page Application (SPA) using React and TypeScript, specifically designed to aggregate and display Formula 1 news, providing the users with up-to-date content.",
+            'Utilized an advanced GPT AI model via AI21\'s Summarize API to generate concise summaries of news articles, posts are then saved to a Postgres database hosted and deployed on Vercel'
             ],
             listProjectThree: ['A web application that allows streamlines the process for TCU senior design students to submit class specific forms',
             'Implemented a Vue.js frontend with a Java SpringBoot backend that saves and retrieves data from a MySQL database',
