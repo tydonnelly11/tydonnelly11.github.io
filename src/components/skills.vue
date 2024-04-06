@@ -14,6 +14,10 @@
             <p>Vue.JS</p>
         </div>
         <div class="skill-card">
+            <img src="/Java.png">
+            <p>Java</p>
+        </div>
+        <div class="skill-card">
             
             <img src="/git.png">
             <p>GitHub</p>
@@ -25,8 +29,12 @@
             <p>MySQL</p>
         </div>
         <div class="skill-card">
-            <img src="/python.png">
-            <p>Python</p>
+            <img src="/javascript.png">
+            <p>JavaScript</p>
+        </div>
+        <div class="skill-card">
+            <img src="/spring-boot-logo.png">
+            <p>SpringBoot</p>
         </div>
         <div class="skill-card">
             <img src="/docker.png">
