@@ -8,16 +8,11 @@
         <h4 class="degree-title">Economics Minor</h4>
         </div>
         <div class="classes-container">
-            <div :style="{'margin-right': '10px'}">
-            <h4 class="h4-course">Currently Taking</h4>
-            <ul>
-                <li class="taking-elem">Senior Design</li>
-                <li class="taking-elem">Operating Systems</li>
-            </ul>
-        </div>
         <div class="completed">
             <h4 class="h4-course">Completed</h4>
             <ul class="course-list">
+                <li>Senior Design</li>
+                <li>Operating Systems</li>
                 <li>Software Engineering</li>
                 <li>OOP and Design Patterns</li>
                 <li>Computer System Fundamentals</li>
@@ -25,7 +20,7 @@
                 <li>Computer and Network Security</li>
                 <li>Data Mining and Visualization</li>
                 <li>Web Technologies</li>
-
+                
                 <li>Analysis of Algorithms</li>
                 <li>Database Systems</li>
                 <li>Computer Ogranization</li>

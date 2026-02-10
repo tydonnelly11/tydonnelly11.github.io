@@ -19,7 +19,7 @@
     <div class="experience-container" ref="experience">
         <br>
         <h1>Experience</h1>
-        <experienceCard :title="'Software Developer Intern'" :date="'July-August 2023'" :company="'Forge Tech Custom Steel'" :list=listExperienceOne></experienceCard>
+        <experienceCard :title="'Software Engineer 1'" :date="'June,2024-Present'" :company="'Local Government Solutions'" :list=listExperienceOne></experienceCard>
         <experienceCard :title="'Software Engineering Intern'" :date="'June-August 2022'" :company="'Auctane'" :list=listExperienceTwo></experienceCard>
     </div>
     
@@ -33,25 +33,11 @@
                      :list="listProjectOne" 
                      />
         <projectCard
-                    :image="'/loading.jpg'"
-                    :list="listProjectThree"
-                    :github="'https://github.com/tydonnelly11/pet-frontend'"
-        ></projectCard>
-        </div>
-        <div class="row" :style='"width: 100%"'>
-            
-            <projectCard
                 :image="'/oldF1Logo.webp'"
                 :list="listProjectTwo"
                 :github="'https://github.com/tydonnelly11/f1-news-aggregation-app'"
                 :style="'width : 50%;'"
                 />
-                <projectCard v-if="false"
-                :image="'/background-img.jpg'"
-                :list="listProjectTwo"
-                :github="'https://github.com/tydonnelly11/f1-news-aggregation-app'"
-                :style="'display: none'"></projectCard>
-
         </div>
     </div>
     
@@ -97,9 +83,9 @@ export default {
 
 
             ],
-            listExperienceOne: ['Worked with the company, converting their specifications into a modern and responsive Single Page Application, which increased user engagement and led to a 50% rise in user contacts compared to the old website.',
-            'Employed a tech stack including HTML, CSS, Vue.js, for the frontend and several AWS Cloud services including Route 53, Lambda, Amazon SES, API Gateway for deployment and backend operations.',
-            'Implemented and managed CI/CD pipelines using GitHub Actions, ensuring seamless code integration, automated testing, and deployment to the production environment.'],
+            listExperienceOne: ['Built a data integration with re:SearchTX, resulting in our company being the only CMS vendor to meet the state-mandated deadline.',
+            'Developed an HTML, CSS, Javascript document gallery and viewer with features that streamlined clerk workflow, reducing document packet assembly time.',
+            ],
             listProjectTwo: ["Developed a dynamic Single Page Application (SPA) using React and TypeScript, specifically designed to aggregate and display Formula 1 news, providing the users with up-to-date content.",
             'Utilized an advanced GPT AI model via AI21\'s Summarize API to generate concise summaries of news articles, posts are then saved to a Postgres database hosted and deployed on Vercel'
             ],

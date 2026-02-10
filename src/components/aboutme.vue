@@ -3,11 +3,7 @@
         <div class="container">
         <!-- <img src="tinylogo.png" alt="Profile Picture" class="profile-image"> -->
         <h1>Ty Donnelly</h1>
-        <p>Computer Science Student at Texas Christian University</p>
-        <p>
-            Software Engineer seeking fulltime employment after graduation (May 2024)
-            
-        </p>
+        <p>Software Engineer 1 @ Local Government Solutions</p>
         <div class="contact-info">
 
             <a href="mailto:tydonnelly11@gmail.com">
