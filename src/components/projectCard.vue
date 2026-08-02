@@ -4,14 +4,14 @@
       <div class="card-inner">
         <div class="card-front" >
 
-         
+
           <img :src="`${image}`">
         </div>
         <div class="card-back">
           <div class="content">
           <ul>
-            <li v-for="item in list">{{item}}</li>
-            
+            <li v-for="(item, index) in list" :key="index">{{item}}</li>
+
           </ul>
 
           </div>
@@ -19,23 +19,23 @@
       </div>
     </div>
     <div class="text">
-      <h4 :style="{ zIndex: isFlipped ? '-1000' : '0' }">Click Me</h4>
-      <a :href="github" target="_blank">
+      <span class="flip-hint" :style="{ opacity: isFlipped ? 0 : 1 }">Click to flip</span>
+      <a :href="github" target="_blank" @click.stop>
             <button class="button-project">
             <i class="fa-brands fa-square-github fa-2xl">
             </i>
             </button>
-            
+
       </a>
     </div>
   </div>
   </template>
-  
+
   <script>
   export default {
     name: "projectCard",
     props: {
-      
+
       image: String,
       list: Array,
       github: String
@@ -52,71 +52,38 @@
     },
   };
   </script>
-  
+
   <style scoped>
- .button-project > i{
-  font-size: 2.5rem;
-  position: relative;
-  left: -2px;
- }
   .project-container{
     display: flex;
-    
-  }
-  .content{
-    display: flex;
     flex-direction: column;
-    width: 100%;
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
     overflow: hidden;
-    height: 100%;
+    padding: var(--space-3);
+    gap: var(--space-2);
   }
   .card {
     width: 100%;
-    height: auto;
+    aspect-ratio: 4 / 3;
     perspective: 1000px;
-
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
   }
-  ul{
-    line-height: 2rem;
-  }
-  ul li{
-    font-size: .8em;
-  }
-  img{
-    height: 100%;
-    object-fit: cover;
-    border: 1px solid black;
-    max-width: 90%;
-  }
-  
   .card-inner {
+    position: relative;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.5s ease;
+    border-radius: var(--radius-sm);
   }
-  
+
   .flipped .card-inner {
     transform: rotateY(180deg);
   }
-  .button-project{
-    margin-top: 5%;
-    position: relative;
-    left: 30px;
-    padding: 0;
-    top: 7.5px;
-    width: 90%;
-    height: 115%;
-  }
-
-  h4{
-    margin: 0;
-    position: relative;
-    left: 38px;
-    color: white;
-    bottom : 25px;
-  }
-  
 
   .card-front {
     width: 100%;
@@ -125,31 +92,78 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1A1A1A;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    transform: rotateY(0deg); 
-
+    background-color: var(--color-surface-alt);
   }
-  
+
+  .card-front img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
   .card-back {
-    width: 90%;
+    width: 100%;
     height: 100%;
     backface-visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e0e0e0;
+    background-color: var(--accent-projects-soft);
     transform: rotateY(-180deg);
     position: absolute;
-    top: 0;
-    left: 24px;
+    inset: 0;
+    padding: var(--space-3);
   }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+
+  ul{
+    line-height: 1.7rem;
+    margin: 0;
+    padding-left: 1.1em;
+  }
+  ul li{
+    font-size: .8em;
+    color: var(--color-text);
+    list-style-position: inside;
+  }
+
   .text{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
+    padding: 0 var(--space-1);
+  }
+
+  .flip-hint{
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    transition: opacity 0.3s ease;
+  }
+
+  .button-project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: var(--radius-pill);
+    background-color: var(--accent-projects-soft);
+    border: none;
+  }
+
+  .button-project > i{
+    font-size: 1.3rem;
+    color: var(--color-text);
   }
 
   @media screen and (max-width: 720px) {
@@ -157,22 +171,8 @@
           font-size: .70rem;
       }
       ul{
-        line-height: 1rem;
+        line-height: 1.3rem;
       }
-      .text{
-        margin-bottom: 2.5%;
-      }
-      button{
-        padding: 0;
-        left: 15px;
-        top: 5px;
-      }
-      .card-back{
-        left : 0px;
-      }
-      .content{
-        color: black;
-      }
-    }
-    
+  }
+
   </style>

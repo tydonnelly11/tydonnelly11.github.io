@@ -50,7 +50,7 @@ ul{
 }
 
 li{
-    color: white;
+    color: var(--color-text);
     line-height: 1.60rem;
     position: relative;
     list-style-type: none;
@@ -64,13 +64,13 @@ li{
 }
 
 .course-list > li::before {
-  content: ""; 
-  position: absolute; 
-  top: 5px; 
+  content: "";
+  position: absolute;
+  top: 5px;
   width: 3px;
   height: 6px;
   left: -15px;
-  border: solid whitesmoke;
+  border: solid var(--accent-education);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
@@ -99,23 +99,28 @@ li{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    background-color: #1A1A1A;
+    padding: var(--space-5);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border-top: 4px solid var(--accent-education);
 
 }
 h2{
-    color: white;
+    color: var(--color-text);
     margin: 0;
 }
 h3{
-    color: white;
+    color: var(--color-text);
     margin: 0;
 }
 h4{
-    color: white;
+    color: var(--color-text);
     margin: 0;
     margin-bottom: 1%;
 }
 .degree-title{
+    color: var(--color-text-muted);
     margin-bottom: 0;
 }
 .h4-course{
@@ -132,12 +137,13 @@ h4{
     width: 70%;
     margin-bottom: 2.5%;
     align-items: flex-end;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--color-border);
 }
 
 @media screen and (max-width: 720px){
     .title{
         flex-direction: column;
+        align-items: flex-start;
         width: 100%;
     }
     .classes-container{
@@ -146,7 +152,10 @@ h4{
     .classes{
         margin-bottom: 5%;
     }
+    .course-list{
+        columns: 1;
+    }
 }
-    
+
 
 </style>

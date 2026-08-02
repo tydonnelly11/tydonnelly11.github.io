@@ -23,10 +23,6 @@ export default {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #1A1A1A;
-}
-@font-face {
-    font-family: 'Montserrat';
-    src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');
+  background-color: var(--color-bg);
 }
 </style>
