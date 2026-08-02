@@ -4,7 +4,7 @@
         <p class="exp-company">{{company}}</p>
         <p class="exp-date">{{date}}</p>
         <ul class="exp-list">
-            <li v-for="item in list">{{item}}</li>
+            <li v-for="(item, index) in list" :key="index">{{item}}</li>
         </ul>
     </div>
 
@@ -29,24 +29,30 @@ export default{
 .exp-container{
     display: flex;
     flex-direction: column;
-    margin-bottom: 5%;
+    height: 100%;
+    padding: var(--space-4);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border-top: 4px solid var(--accent-experience);
 }
 .exp-title{
-    color: white;
-    font-size: 2.25rem;
+    color: var(--color-text);
+    font-size: 1.6rem;
     margin: 0;
 }
 .exp-company{
-    color: white;
+    color: var(--color-text);
+    font-weight: 500;
     margin-bottom: 0;
 }
 
 .exp-date{
-    color: white;
+    color: var(--color-text-muted);
     margin-bottom: 0;
 }
 .exp-list{
-    color: white;
+    color: var(--color-text);
     list-style: ➔;
 }
 </style>
