@@ -24,7 +24,7 @@
             </a>
         </div>
         <div class="resume-row">
-            <a href="/waterform.pdf" download target="_blank" rel="noopener">
+            <a href="/ty-donnelly-swe.pdf" download target="_blank" rel="noopener">
                 <button class="resume-button">
                     <i class="fa-solid fa-file-arrow-down"></i>
                     Resume
