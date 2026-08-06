@@ -1,55 +1,36 @@
 <template>
     <div class="skills-card">
         <div class="skills-grid">
-            <div class="skill-card">
-                <img src="/html.svg">
-                <p>HTML</p>
-            </div>
-            <div class="skill-card">
-                <img src="/css.png">
-                <p>CSS</p>
-            </div>
-            <div class="skill-card">
-                <img src="/vuejs.png">
-                <p>Vue.JS</p>
-            </div>
-            <div class="skill-card">
-                <img src="/Java.png">
-                <p>Java</p>
-            </div>
-            <div class="skill-card">
-                <img src="/git.png">
-                <p>GitHub</p>
-            </div>
-            <div class="skill-card">
-                <img src="/mysql.png" class="mysql-img">
-                <p>MySQL</p>
-            </div>
-            <div class="skill-card">
-                <img src="/javascript.png">
-                <p>JavaScript</p>
-            </div>
-            <div class="skill-card">
-                <img src="/spring-boot-logo.png">
-                <p>SpringBoot</p>
-            </div>
-            <div class="skill-card">
-                <img src="/docker.png">
-                <p>Docker</p>
-            </div>
-            <div class="skill-card">
-                <img src="/react.png" class="react-img" >
-                <p>React</p>
-            </div>
+            <SkillCard v-for="skill in skillsList" :key="skill.label" :icon="skill.icon" :label="skill.label" />
         </div>
     </div>
 
 </template>
 
 <script>
+import SkillCard from './SkillCard.vue';
+
 export default{
     name: 'skills',
-
+    components: {
+        SkillCard,
+    },
+    data() {
+        return {
+            skillsList: [
+                { icon: '/html.svg', label: 'HTML' },
+                { icon: '/css.png', label: 'CSS' },
+                { icon: '/vuejs.png', label: 'Vue.JS' },
+                { icon: '/git.png', label: 'GitHub' },
+                { icon: '/mysql.png', label: 'MySQL' },
+                { icon: '/javascript.png', label: 'JavaScript' },
+                { icon: '/docker.png', label: 'Docker' },
+                { icon: '/react.png', label: 'React' },
+                { icon: '/python.png', label: 'Python' },
+                { icon: '/openqm.png', label: 'OpenQM' },
+            ],
+        };
+    },
 }
 </script>
 
@@ -63,30 +44,10 @@ export default{
     border-top: 4px solid var(--accent-skills);
 }
 
-img{
-    max-height: 64px;
-    max-width: 64px;
-}
-
 .skills-grid{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: var(--space-4);
-}
-
-.skill-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--space-2);
-    text-align: center;
-}
-
-p{
-    color: var(--color-text);
-    font-size: 1rem;
-    margin: 0;
 }
 
 @media screen and (max-width: 720px) {

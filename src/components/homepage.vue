@@ -188,6 +188,7 @@ export default {
     transform: translateY(24px);
     transition: opacity 0.6s ease, transform 0.6s ease;
     scroll-margin-top: var(--nav-height);
+    border-radius: var(--radius-xlg);
 }
 .bento-section.is-visible{
     opacity: 1;
